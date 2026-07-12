@@ -1,242 +1,58 @@
 ```markdown
 # 🚔 CrimeGPT Unified
-### AI-Assisted FIR Generation & Officer Review System
 
-> **KANAD Shield Gujarat Hackathon Prototype**
+**AI-Assisted FIR Generation & Officer Review System**  
+*KANAD Shield Gujarat Hackathon Prototype*
 
-CrimeGPT Unified is an AI-powered prototype designed to simplify the complaint registration process for citizens while assisting police officers in drafting and reviewing FIRs. The system demonstrates a **Human-in-the-Loop** workflow where AI assists, but the final decision always remains with the officer.
+## Features
+- 👤 Citizen complaint submission (Text/Voice)
+- 📍 Complaint status tracking
+- 👮 Officer dashboard with complaint queue
+- 🤖 AI-generated FIR drafting
+- ✅ Human review & approval workflow
+- 📚 Citation verification
 
----
+## Tech Stack
+- **Frontend:** React, Vite, Tailwind CSS
+- **Backend:** Python, FastAPI
+- **Database:** SQLite
+- **AI:** LLM-based FIR generation & speech-to-text
 
-## 📌 Features
-
-### 👤 Citizen Portal
-- Voice/Text complaint submission
-- AI-assisted complaint understanding
-- Complaint tracking
-- User-friendly interface
-- Modern React + Tailwind UI
-
-### 👮 Officer Dashboard
-- Incoming complaint queue
-- AI-generated FIR draft
-- Review, edit, approve workflow
-- Citation verification
-- Human approval before submission
-
-### 🤖 AI Features
-- Complaint summarization
-- FIR draft generation
-- Speech-to-text support
-- Citation verification
-- Prompt engineering pipeline
-
----
-
-# 🏗️ Project Structure
+## Project Structure
 
 ```
 
 CrimeGPT-Unified/
-│
 ├── backend/
-│   ├── ai/
-│   ├── auth.py
-│   ├── database.py
-│   ├── main.py
-│   ├── hash_chain.py
-│   ├── citation_verification.py
-│   └── config.py
-│
 ├── frontend_citizen/
-│   ├── src/
-│   └── public/
-│
 ├── frontend_officer/
-│   ├── src/
-│   └── public/
-│
 ├── requirements.txt
 ├── run_all.py
 └── README.md
 
 ````
 
----
-
-# 🛠 Tech Stack
-
-## Backend
-- Python
-- FastAPI
-- SQLite
-- Pydantic
-
-## AI
-- Large Language Model Integration
-- Prompt Engineering
-- Speech-to-Text
-- Citation Verification
-
-## Frontend
-- React
-- Vite
-- Tailwind CSS
-- JavaScript
-
----
-
-# 🚀 Installation
-
-## 1. Clone Repository
-
-```bash
-git clone https://github.com/Varun-CIT/Crime-GPT--working-code.git
-cd Crime-GPT--working-code
-````
-
----
-
-## 2. Install Backend Dependencies
+## Installation
 
 ```bash
 pip install -r requirements.txt
-```
 
----
-
-## 3. Install Citizen Frontend
-
-```bash
 cd frontend_citizen
 npm install
-```
 
----
-
-## 4. Install Officer Frontend
-
-```bash
 cd ../frontend_officer
 npm install
-```
+````
 
----
-
-# ▶ Running the Project
-
-## Option 1 (Recommended)
-
-Run everything together:
+## Run
 
 ```bash
 python run_all.py
 ```
 
----
+## Disclaimer
 
-## Option 2 (Manual)
-
-### Backend
-
-```bash
-cd backend
-python main.py
-```
-
-### Citizen Frontend
-
-```bash
-cd frontend_citizen
-npm run dev
-```
-
-### Officer Frontend
-
-```bash
-cd frontend_officer
-npm run dev
-```
-
----
-
-# 🎯 Workflow
-
-Citizen Complaint
-
-⬇
-
-AI Understanding
-
-⬇
-
-AI Draft FIR
-
-⬇
-
-Officer Review
-
-⬇
-
-Officer Edit
-
-⬇
-
-Officer Approval
-
-⬇
-
-Final FIR
-
----
-
-# 🔒 Human-in-the-Loop
-
-This prototype is designed to demonstrate responsible AI.
-
-* AI only assists in drafting.
-* Officers review every generated FIR.
-* Officers can edit or reject AI suggestions.
-* Final approval is always performed by a human officer.
-
----
-
-# 📷 Prototype Modules
-
-* Citizen Complaint Submission
-* Complaint Status Tracking
-* Officer Queue
-* FIR Review & Approval
-* Citation Verification
-
----
-
-# 📖 Future Enhancements
-
-* Real authentication
-* OCR for uploaded evidence
-* Multi-language support
-* FIR PDF generation
-* Blockchain evidence storage
-* Live complaint routing
-* AI risk assessment
-* Cloud deployment
-
----
-
-# 👨‍💻 Team
-
-Developed for the **KANAD Shield Gujarat Hackathon**.
-
----
-
-# ⚠ Disclaimer
-
-This project is a hackathon prototype developed for demonstration purposes only. It is **not intended for production use** and should not be considered an official law enforcement system.
-
----
-
-## ⭐ If you found this project useful, consider giving it a star on GitHub.
+This is a hackathon prototype built for the **KANAD Shield Gujarat Hackathon**. AI assists in drafting FIRs, while the final decision always remains with the officer.
 
 ```
 ```
